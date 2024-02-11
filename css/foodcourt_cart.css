@@ -1,0 +1,225 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	
+}
+.back
+{
+	height: 100vh;
+	background-image: url("../images/foodcourtback.jpg");
+	background-size: cover;
+}
+body
+{
+	background-color: black;
+}
+.nav
+{
+		display: inline-flex;
+		position: relative;
+		/*overflow: hidden;*/
+			width: 52%;
+		background-color: #f2f2f2;
+		border-radius: 30px;
+		box-shadow: 0 10px 40px rgba(150,172,177,0.8);
+		margin-left:500px;
+		margin-top:50px;
+		height: 60px;
+		margin-right: 220px;
+		
+}
+.nav-item
+{
+	color:  #262626;
+	padding: 20px;
+	text-decoration: none;
+	transition: 0.3s;
+	margin: 0 7px;
+	z-index: 1;
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: 500;
+	position: relative;
+	
+	
+}
+.nav-item:before
+{
+	content: "";
+	position: absolute;
+	bottom: -7px;
+	left: 0;
+	width: 100px;
+	height: 5px;
+	background-color: #000000;
+	border-radius: 1px 1px 0 0 ;
+	opacity: 0;
+	transition: 0.3s;
+}
+.nav-item:not(.is-active):hover:before
+{
+	opacity:1;
+	bottom: 0;
+}
+.nav-item:not(.is-active):hover
+{
+	color: #1aff1a;
+	
+}
+.nav-indicator
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 4px;
+	transition: 0.4s;
+	height: 5px;
+	z-index: 1;
+	border-radius: 8px 8px 0 0;
+	
+}
+
+
+
+.shop
+{
+	text-align: center;
+	color:   #00ffff;
+	font-size: 100px;
+	margin-top: 200px;
+	font-family:'Fjalla One', sans-serif;
+	text-shadow: 0 0 10px  #000000, 0 0 10px  #000000,0 0 10px  #000000;
+	letter-spacing: 10px;
+}
+
+.details
+{
+		color: red;
+		float: right;
+		margin-right: 100px;
+		margin-top: -140px;
+		text-align: center;
+		  
+}
+
+.rem
+{
+	
+	
+	
+	font-family:'Rubik', sans-serif;
+	color:   #000000;
+	letter-spacing: 1px;
+	font-weight: bolder;
+}
+.itms
+{
+		border: solid 2px black;
+		height: auto;
+		width: 100vh;
+		margin-left: 20px;
+		background-color: white;
+		border-radius: 10px;	 
+}
+.fname
+{
+	font-size: 20px;
+	font-family:'Fjalla One', sans-serif;
+	color:   #ff0000;
+	letter-spacing: 2px;
+	text-shadow: 0 0 10px  #ffffff, 0 0 10px  #ffffff,0 0 10px  #ffffff;
+	margin-top: -40px;
+}
+.quan
+{
+	
+	font-size: 15px;
+	font-family:'Rubik', sans-serif;
+	color:   #000000;
+	letter-spacing: 2px;
+	margin-left: 5px;
+	font-weight: bolder;
+}
+.rem
+{
+	font-size: 15px;
+	font-family:'Rubik', sans-serif;
+	color:   #000000;
+	letter-spacing: 1px;
+	font-weight: bolder;
+	text-decoration: none;
+	border: 2px solid black;
+	padding: 7px;
+	font-size: 12px;
+}	
+.rname
+{
+	
+	font-size: 25px;
+	font-family:'Fjalla One', sans-serif;
+	color:  #5200cc;
+	letter-spacing: 2px;
+	text-shadow: 0 0 1px  #ffffff, 0 0 10px  #ffffff,0 0 10px  #ffffff;
+	margin-left: -400px;
+}
+
+.tot
+{
+text-align: center;
+font-family:'Fjalla One', sans-serif;
+font-size: 30px;
+margin-top: 20px;
+color: #6600ff;
+text-shadow: 0 0 10px  #ffffff, 0 0 10px  #ffffff,0 0 10px  #ffffff;	
+}
+.amount
+{
+padding-top: 30px;	
+font-size: 25px;
+text-align: center;	
+font-family:'Rubik', sans-serif;
+color: #000000;
+font-weight: 3px;
+}
+.pro
+{
+padding-top: 30px;	
+font-size: 25px;
+text-align: center;	
+font-family:'Rubik', sans-serif;
+color: #000000;
+font-weight: 3px;
+}
+
+.checkout
+{
+float: right;
+width: 40vh;
+background-color: white;
+height: 39vh;
+margin-right: 50px;	
+border-radius: 20px;
+border: solid 5px black;
+margin-top: -100px;	
+}
+.pri
+{
+	font-size: 15px;
+	font-family:'Rubik', sans-serif;
+	color:   #000000;
+	letter-spacing: 2px;
+	margin-left: 5px;
+	font-weight: bolder;
+}
+.butt
+{
+margin-left: 80px;
+font-size: 15px;
+padding: 10px;
+background-color:#66ff33;
+color: black;
+font-family:'Rubik', sans-serif;
+border: solid 2px black;
+border-radius: 5px;
+}

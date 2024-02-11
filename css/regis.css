@@ -1,0 +1,185 @@
+body{
+    padding: 0;
+    margin: 0;
+	 background-image: url('../images/regisback.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+	height: 80vh;
+}
+.nav
+{
+		display: inline-flex;
+		position: relative;
+		/*overflow: hidden;*/
+		width: 48%;
+		background-color: #f2f2f2;
+		border-radius: 30px;
+		box-shadow: 0 10px 40px rgba(150,172,177,0.8);
+		margin-left:500px;
+		margin-top:50px;
+		height: 60px;
+		margin-right: 220px;
+
+		
+}
+.nav-item
+{
+	color:  #262626;
+	padding: 20px;
+	text-decoration: none;
+	transition: 0.3s;
+	margin: 0 7px;
+	z-index: 1;
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: 500;
+	position: relative;
+	
+	
+}
+.nav-item:before
+{
+	content: "";
+	position: absolute;
+	bottom: -7px;
+	left: 0;
+	width: 100px;
+	height: 5px;
+	background-color: #000000;
+	border-radius: 1px 1px 0 0 ;
+	opacity: 0;
+	transition: 0.3s;
+}
+.nav-item:not(.is-active):hover:before
+{
+	opacity:1;
+	bottom: 0;
+}
+.nav-item:not(.is-active):hover
+{
+	color: #1aff1a;
+	
+}
+.nav-indicator
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 4px;
+	transition: 0.4s;
+	height: 5px;
+	z-index: 1;
+	border-radius: 8px 8px 0 0;
+	
+}
+
+
+
+.content{
+    position: relative;
+    text-align: center;
+    top: 15%;
+    margin: auto;
+    height: auto;
+    width: 50%;
+	padding-top: 40px;
+}
+
+.content .mainText{
+    color: #ffffff;
+	font-family: 'Signika', sans-serif;
+	font-weight: bold;
+	text-shadow: 0 0 10px  red, 0 0 10px  red;
+	font-size: 60px;
+}
+
+
+.content .formBox{
+    height: auto;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 2%;
+    padding-bottom: 4%;
+    color: white;
+}
+
+.content .formBox .textForm{
+    position: relative;
+    width: 88%;
+    margin: auto;
+    height: auto;
+}
+
+.content .formBox .textForm h4{
+    font-size: 40px;
+    color: #4dffa6;
+    font-family: 'Signika', sans-serif;
+	font-weight: lighter;
+}
+
+.content .formBox p{
+	 font-family: 'Signika', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 100px;
+	 color: #4dffa6;
+}
+
+.content .formBox .inp, textarea{
+    width: 60%;
+    height: 7%;
+    background-color:#ffffff;
+    text-align: center;  
+    font-size: 16px;
+}
+
+textarea{
+    resize: none;
+    height: 15%;
+}
+
+::placeholder{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.content .formBox .btn{
+     width: 26%;
+    height: 8%;
+    background-color:#000000;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.8);
+	border-color:#3333ff;
+	border-width:3px;
+	color:white;
+	font-family: 'Signika', sans-serif;
+	border-radius: 30px;
+}
+.content .formBox .inp
+{
+	width: 60%;
+    height: 7%;
+    background-color:#ffffff;
+    text-align: center;  
+    font-size: 16px;
+}
+.content a
+{
+	font-size: 20px;
+    color: #4dffa6;
+    text-decoration: none;
+    font-family: 'Signika', sans-serif;
+}
+::-webkit-scrollbar
+{
+
+width: 12px;
+}
+::-webkit-scrollbar-thumb
+{
+background: linear-gradient(transparent,#30ff00);
+}
+::-webkit-scrollbar-thumb:hover
+{
+background: linear-gradient(transparent,#00c6ff);	
+}

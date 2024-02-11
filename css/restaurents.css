@@ -1,0 +1,345 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	
+}
+.back
+{
+	height: 100vh;
+	background: rgba(100,100,100,0.1);
+	
+}
+.video-background
+{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1;
+}
+@media (min-aspect-ratio:16/9)
+{
+	.video-background
+	{
+		width: 100%;
+		height: auto;
+	}
+	
+}
+@media (max-aspect-ratio:16/9)
+{
+	.video-background
+	{
+		width: auto;
+		height: 100%;
+	}
+	
+}
+.nav
+{
+		display: inline-flex;
+		position: relative;
+		/*overflow: hidden;*/
+		width: 52%;
+		background-color: #f2f2f2;
+		border-radius: 30px;
+		box-shadow: 0 10px 40px rgba(150,172,177,0.8);
+		margin-left:500px;
+		margin-top:50px;
+		height: 60px;
+		margin-right: 220px;
+		
+}
+.nav-item
+{
+	color:  #262626;
+	padding: 20px;
+	text-decoration: none;
+	transition: 0.3s;
+	margin: 0 7px;
+	z-index: 1;
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: 500;
+	position: relative;
+	
+	
+}
+.nav-item:before
+{
+	content: "";
+	position: absolute;
+	bottom: -7px;
+	left: 0;
+	width: 100px;
+	height: 5px;
+	background-color: #000000;
+	border-radius: 1px 1px 0 0 ;
+	opacity: 0;
+	transition: 0.3s;
+}
+.nav-item:not(.is-active):hover:before
+{
+	opacity:1;
+	bottom: 0;
+}
+.nav-item:not(.is-active):hover
+{
+	color: #1aff1a;
+	
+}
+.nav-indicator
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 4px;
+	transition: 0.4s;
+	height: 5px;
+	z-index: 1;
+	border-radius: 8px 8px 0 0;
+	
+}
+
+
+.pack_text
+{
+	text-align: center;
+	color:#ffff00;
+	font-size: 100px;
+	margin-top: 200px;
+	font-family:'Fjalla One', sans-serif;
+	text-shadow: 0 0 10px  #000000, 0 0 10px  #000000,0 0 10px  #000000;
+	letter-spacing: 10px;
+}
+#locate {
+    position: absolute;
+    display: block;
+    width: 166px;
+    height: 64px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 32px;
+    z-index: 100;
+  }
+  
+#locate .locate-item {
+    background-color: #1a1a1b;
+    position: relative;
+    display: inline-block;
+	top: 590px;
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    border: none;
+    outline: 0px none;
+    outline: 0px;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+ 
+#locate .locate-item img {
+    position: relative;
+    display: block;
+    width: 50%;
+    min-width: 50%;
+    max-width: 50%;
+    height: auto;
+    margin: auto;
+  }
+
+
+.carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    top: 590px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    will-change: transform;
+  }
+  .stage {
+    height: 100%;
+    color: white;
+    margin: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    will-change: transform;
+  }
+   .item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    display: inline-block;
+    display: inline-block;
+    overflow: hidden;
+    transform-origin: 50% 50% -50vw !important;
+    will-change: transform;
+  }
+    .bcg {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center center;  
+    background-size: cover;
+  }
+ 
+  .content {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 50%;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    text-align: center;
+    overflow: hidden;
+    z-index: 3;
+  }
+  .content .description {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 24px;
+    overflow: hidden;
+  }
+ .content .description p {
+    color: #000066;
+	text-shadow: 0 0 10px  #ffffff ,0 0 10px  #ffffff,0 0 10px  #ffffff;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+ 
+ .content .headline {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 65px;
+    overflow: hidden;
+    margin: 32px 0;
+  }
+   
+   .content .headline h2 {
+    color:  #00ffff;
+	text-shadow: 0 0 10px  #000000, 0 0 10px  #000000;
+    font-size: 70px;
+    line-height: 64px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 2px;
+  }
+   
+    .content .discover-more {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 48px;
+    overflow: hidden;
+  }
+   .content .discover-more .discover-more-target {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 164px;
+    height: 48px;
+    margin: 0 auto;
+    background-color: #FFFFFA;
+    color: #1a1a1b;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: 0px none;
+    outline: 0px;
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+	letter-spacing: 2px;
+    transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+  }
+  .content .discover-more .discover-more-target:hover {
+    background-color: #1a1a1b;
+    color: #FFFFFA;
+  }
+  
+ #contact
+{
+		background-color: #1c1c1d;
+		padding-top: 50px;
+		border-top: 5px solid rgba(0,0,0,0.1);
+}
+#contact-left h3,
+#contact-right h3
+{
+		color: white !important;
+		font-size: 27px;
+		font-weight: 400px;
+}
+#contact-left p
+{
+	color: white;
+	margin-bottom: 30px;
+	font-family:'Fjalla One', sans-serif;
+	letter-spacing: 2px;
+	font-weight: lighter;
+}
+#contact-info
+{
+	background-image: url();
+	background-repeat: norepeat;
+	background-size: contain;
+}
+address
+{
+	color: white;
+	font-family: arial;
+	
+}
+address strong
+{
+		font-size: 16px;
+		letter-spacing: 1px;
+}
+
+form .form-control
+{
+	background: transparent;
+	border-radius: 0;
+	border-color: white;
+	font-size: 17px;
+	font-weight: 300;
+	padding: 8px 16px;
+	margin-bottom: 20px;
+	color: white;
+}
+

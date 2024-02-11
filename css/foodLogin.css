@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/foodloginback.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+	height: 70vh;
+}
+
+.content{
+    position: relative;
+    text-align: center;
+    top: 15%;
+    margin: auto;
+    height: auto;
+    width: 50%;
+}
+
+.content .mainText{
+    font-size: 3em;
+    height: auto;
+    width: auto;
+    margin-bottom: 8%;
+    
+}
+
+.content .mainText .red{
+    color: #ffffff;
+	font-family: 'Signika', sans-serif;
+	font-weight: bold;
+	text-shadow: 0 0 10px  red, 0 0 10px  red;
+}
+
+.content .mainText span{
+    
+     font-family: 'Signika', sans-serif;
+	color: #ffffff;
+	font-weight: bold;
+	text-shadow: 0 0 10px  red, 0 0 10px  red;
+}
+
+.content .formBox{
+    height: auto;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+
+.content .formBox .textForm{
+    position: relative;
+    width: 88%;
+    margin: auto;
+    height: auto;
+}
+
+.content .formBox .textForm h4{
+    font-size: 29px;
+    color: #4dffa6;
+    font-family: 'Signika', sans-serif;
+	font-weight: lighter;
+}
+
+.content .formBox .textForm h4:before, .content .formBox .textForm h4:after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 34%;
+    height: 5px;
+    top: 18px;
+    border-radius: 30px;
+}
+
+.content .formBox .textForm h4:before{
+    left: 25px;
+    background-image: linear-gradient(to left, red, transparent);
+}
+
+.content .formBox .textForm h4:after{
+    right: 25px;
+    background-image: linear-gradient(to right, red, transparent);
+}
+
+.content .formBox .usr, .content .formBox .pwd{
+    width: 60%;
+    height: 7%;
+    background-color:#ffffff;
+    text-align: center;  
+    font-size: 16px;
+}
+
+::placeholder{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.content .formBox .btn{
+    width: 26%;
+    height: 8%;
+    background-color:#000000;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.8);
+	border-color:#3333ff;
+	border-width:3px;
+	color:white;
+	font-family: 'Signika', sans-serif;
+	border-radius: 30px;
+}
+
+.content .formBox a{
+    font-size: 27px;
+    color: #4dffa6;
+    text-decoration: none;
+    font-family: 'Signika', sans-serif;
+}
+
+.content .intro{
+    margin-top: 10%; 
+}
+
+.content .intro p{
+    font-size: 27px;
+     color: #4dffa6;
+    margin-bottom: 8%;
+    font-family: 'Signika', sans-serif;
+	text-shadow: 0 0 10px  black, 0 0 10px  black,0 0 10px  black;
+}
+::-webkit-scrollbar
+{
+
+width: 12px;
+}
+::-webkit-scrollbar-thumb
+{
+background: linear-gradient(transparent,#30ff00);
+}
+::-webkit-scrollbar-thumb:hover
+{
+background: linear-gradient(transparent,#00c6ff);	
+}
+

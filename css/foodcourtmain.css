@@ -1,0 +1,120 @@
+.first
+{
+	height: 100vh;
+	background-image: url("../images/restroback.jpg");
+	background-size: cover;	
+	
+}
+.orders
+{
+	text-align:center;
+	font-size: 100px;
+	margin: 0;
+	padding: 0;
+	margin-top: 300px;
+	font-family: 'Fjalla One', sans-serif;
+	letter-spacing: 2px;	
+	color: #00ff00;
+	text-shadow: 0 0 10px  #000000, 0 0 10px  #000000,0 0 10px  #000000;
+}
+.name
+{
+	float:right;
+	color: red;
+	height: 7%;
+	width: 10%; 
+	margin-right:40px;
+	font-family: 'Fjalla One', sans-serif;
+	
+}
+.logout
+{
+	float:right;
+	color: red;
+	height: 7%;
+	width: 10%; 
+	margin-right:40px;
+	font-family: 'Fjalla One', sans-serif;
+}
+.btnAcc
+ {
+     background-color: blue;
+            
+}
+
+.btnRej
+{
+   background-color: red;
+            
+}
+.btnDon
+{
+   background-color: green;
+}
+.nav
+{
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 90px;
+  
+ 
+}
+.nav .fixedBox{
+  position: absolute;
+  right: 15px;
+  top: 25px;
+  font-size: 20px;
+  color: #00ccff;
+  font-family: 'Rubik' ;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.button1
+{
+height: 40px;
+width: 250px;
+border:solid 2px white;
+border-radius: 15px;
+background-color: black; 	
+}
+
+
+.listBox{
+  display: none;
+  position: absolute;
+  height: auto;
+  width: auto;
+  background: yellow;
+  text-align: center;
+  right: 8px;
+  top: 90px;
+  border: 2.5px dashed black;
+}
+
+.listBox button{
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  right: 0;
+  top: 0;
+  background-color: black;
+  color:red;
+  font-weight: bold;
+  border: solid 2px white;
+  border-radius: 35px;	
+   
+}
+
+.listBox div{
+  width: 80%;
+  border: 1.5px green solid;
+  margin-left: 10%;
+  margin-bottom: 5px;
+}
+
+.listBox a{
+  text-decoration: none;
+  font-size: 20px;
+}   

@@ -1,0 +1,328 @@
+body
+{
+background-color: black;	
+}
+
+
+.back
+{
+	height: 100vh;
+	
+}
+.video-background
+{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1;
+}
+@media (min-aspect-ratio:16/9)
+{
+	.video-background
+	{
+		width: 100%;
+		height: auto;
+	}
+	
+}
+@media (max-aspect-ratio:16/9)
+{
+	.video-background
+	{
+		width: auto;
+		height: 100%;
+	}
+	
+}
+.nav
+{
+		display: inline-flex;
+		position: relative;
+		/*overflow: hidden;*/
+		width: 52%;
+		background-color: #f2f2f2;
+		border-radius: 30px;
+		box-shadow: 0 10px 40px rgba(150,172,177,0.8);
+		margin-left:430px;
+		margin-top:50px;
+		height: 60px;
+		margin-right: 140px;
+		color:black;
+		
+}
+.nav-item
+{
+	color:  #262626;
+	padding: 20px;
+	text-decoration: none;
+	transition: 0.3s;
+	margin: 0 7px;
+	z-index: 1;
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: 500;
+	position: relative;
+	
+	
+}
+.nav-item:before
+{
+	content: "";
+	position: absolute;
+	bottom: -7px;
+	left: 0;
+	width: 100px;
+	height: 5px;
+	background-color: #000000;
+	border-radius: 1px 1px 0 0 ;
+	opacity: 0;
+	transition: 0.3s;
+}
+.nav-item:not(.is-active):hover:before
+{
+	opacity:1;
+	bottom: 0;
+}
+.nav-item:not(.is-active):hover
+{
+	color: #1aff1a;
+	
+}
+.nav-indicator
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 4px;
+	transition: 0.4s;
+	height: 5px;
+	z-index: 1;
+	border-radius: 8px 8px 0 0;
+	
+}
+
+
+
+.pack_text
+{
+	text-align: center;
+	color:   #ff0000;
+	font-size: 100px;
+	margin-top: 200px;
+	font-family:'Fjalla One', sans-serif;
+	text-shadow: 0 0 10px  #000000, 0 0 10px  #000000,0 0 10px  #000000;
+	letter-spacing: 10px;
+}
+
+
+
+.product-grid
+{
+	font-family: 'Fjalla One', sans-serif;
+	letter-spacing: 1px;
+	text-align: center;
+	padding: 4px 4px 0;
+	position: relative;
+	z-index: 1;
+}
+.product-grid:before,
+.product-grid:after
+{
+	content:'';
+	height: 0;
+	width: 0;
+	border-top: 1px solid #00ff00;
+	border-left: 1px solid #00ff00;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	transition: all 0.5s;
+	
+}
+.product-grid:after
+{
+	border-left: none;
+	border-top: none;
+	border-bottom: 4px solid #00ff00;
+	border-right: 4px solid #00ff00;
+	top: auto;
+	bottom: 0;
+	left: auto;
+	right: 0;
+	
+}
+.product-grid:hover:before,
+.product-grid:hover:after
+{
+	height: 100%;
+	width: 100%;
+}
+.product-grid .product-image
+{
+	position: relative;
+	overflow: hidden;
+	
+}
+.product-grid .product-image .image
+{
+	display: block;
+}
+.product-grid .product-image img
+{
+	width: auto;
+	height: auto;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.row
+{
+	margin-top: 100px;
+	
+}
+.add-to-cart
+{
+	color: white;
+    background-color: #5A827F;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-style: 2px solid;
+	padding-bottom: 5px;
+	font-size: 15px;
+	
+}
+.price
+{
+		font-size: 15px;
+		color: white;
+		margin-top: -10px;
+		margin-bottom: 10px;
+}
+
+.res
+{
+	color: #b3ff1a;
+	text-align: center;
+	padding-top: 40px;
+	font-family: 'Fjalla One', sans-serif;
+	text-shadow: 0 0 10px  #000000, 0 0 10px  #000000,0 0 10px  #000000;
+	font-size: 80px; 
+}
+.title
+{
+	font-size: 20px;
+	color: white;
+	margin-bottom: 10px;
+	
+}
+.form-control
+{
+	border: none;
+	outline: none;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+	margin: 0 5px !important;
+	font-size: 15px;
+	height: 10px;
+	width: 10px;
+	
+}
+.form-control:hover,
+.form-control:focus
+{
+	background: #ff008b;
+	color: #fff;
+}
+button
+{
+	background: black;
+	color: #fff;
+	border: solid 2px #aaff00;
+	outline: none;
+	padding: 0 10px;
+	border-radius: 5px;
+	font-size: 15px;
+	
+}
+button:hover
+{
+	background: #ff008b;
+	
+}
+.product-button-group
+{
+margin-bottom: 10px;	
+}
+.box
+{
+	padding-bottom: 10px;
+}
+::-webkit-scrollbar
+{
+
+width: 12px;
+}
+::-webkit-scrollbar-thumb
+{
+background: linear-gradient(transparent,#30ff00);
+}
+::-webkit-scrollbar-thumb:hover
+{
+background: linear-gradient(transparent,#00c6ff);	
+}
+#contact
+{
+		background-color: #1c1c1d;
+		padding-top: 50px;
+		border-top: 5px solid rgba(0,0,0,0.1);
+}
+#contact-left h3,
+#contact-right h3
+{
+		color: white !important;
+		font-size: 27px;
+		font-weight: 400px;
+}
+#contact-left p
+{
+	color: white;
+	margin-bottom: 30px;
+	font-family:'Fjalla One', sans-serif;
+	letter-spacing: 2px;
+	font-weight: lighter;
+}
+#contact-info
+{
+	background-image: url();
+	background-repeat: norepeat;
+	background-size: contain;
+}
+address
+{
+	color: white;
+	font-family: arial;
+	
+}
+address strong
+{
+		font-size: 16px;
+		letter-spacing: 1px;
+}
+
+form .form-control
+{
+	background: transparent;
+	border-radius: 0;
+	border-color: white;
+	font-size: 17px;
+	font-weight: 300;
+	padding: 8px 16px;
+	margin-bottom: 20px;
+	color: white;
+}

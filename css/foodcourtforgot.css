@@ -1,0 +1,85 @@
+body
+{
+	background-image: url('../images/food.jpg');
+	background-size: cover;
+	height: 96.5vh;
+	 margin: 0;
+    padding: 0;
+}
+
+
+.forgot
+{
+	text-align:center;
+	margin-top: 100px;
+	margin-left: 300px;
+	margin-right: 300px;
+	padding-bottom: 200px;
+	 background-color: rgba(0, 0, 0, 0.7);
+	height: 30vh;
+}
+.pass
+{
+		text-align: center;
+		color:   #ace600;
+		padding-top: 20px;
+		font-family: 'Signika', sans-serif;
+		letter-spacing: 2px;
+		text-shadow: 0 0 10px  black, 0 0 10px  black,0 0 10px  black;
+		font-size: 40px;
+}
+.enter
+{
+	color:   #ff0000;
+	font-family: 'Signika', sans-serif;
+	letter-spacing: 2px;
+	text-shadow: 0 0 10px  black, 0 0 10px  black,0 0 10px  black;
+	font-size: 30px;
+}
+.Email
+{
+	background-color: white;
+	font-size: 20px;
+	 width: 40%;
+    height: 20%;
+	border: solid 3px black;
+	border-radius: 10px;
+}
+.submit
+{
+	 width: 20%;
+    height: 20%;
+	margin-top : 30px;
+	font-size: 25px;
+	font-family:'Signika', sans-serif;
+	letter-spacing: 2px;
+	background-color :black;
+	border-radius: 30px;
+	border: solid 3px white;
+	color: white;
+	
+}
+ 
+
+ .intro p{
+    font-size: 27px;
+     color:  #ace600;
+    margin-bottom: 8%;
+    font-family: 'Signika', sans-serif;
+	text-shadow: 0 0 10px  black, 0 0 10px  black,0 0 10px  black;
+	text-align: center;
+	
+}
+::-webkit-scrollbar
+{
+
+width: 12px;
+}
+::-webkit-scrollbar-thumb
+{
+background: linear-gradient(transparent,#30ff00);
+}
+::-webkit-scrollbar-thumb:hover
+{
+background: linear-gradient(transparent,#00c6ff);	
+}

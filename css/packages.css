@@ -1,0 +1,298 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	
+}
+.back
+{
+	height: 100vh;
+	
+}
+.video-background
+{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1;
+}
+@media (min-aspect-ratio:16/9)
+{
+	.video-background
+	{
+		width: 100%;
+		height: auto;
+	}
+	
+}
+@media (max-aspect-ratio:16/9)
+{
+	.video-background
+	{
+		width: auto;
+		height: 100%;
+	}
+	
+}
+.nav
+{
+		display: inline-flex;
+		position: relative;
+		/*overflow: hidden;*/
+		width: 51%;
+		background-color: #f2f2f2;
+		border-radius: 30px;
+		box-shadow: 0 10px 40px rgba(150,172,177,0.8);
+		margin-left:360px;
+		margin-top:50px;
+		height: 60px;
+		margin-right: 220px;
+
+		
+}
+.nav-item
+{
+	color:  #262626;
+	padding: 20px;
+	text-decoration: none;
+	transition: 0.3s;
+	margin: 0 7px;
+	z-index: 1;
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: 500;
+	position: relative;
+	
+	
+}
+.nav-item:before
+{
+	content: "";
+	position: absolute;
+	bottom: -7px;
+	left: 0;
+	width: 100px;
+	height: 5px;
+	background-color: #000000;
+	border-radius: 1px 1px 0 0 ;
+	opacity: 0;
+	transition: 0.3s;
+}
+.nav-item:not(.is-active):hover:before
+{
+	opacity:1;
+	bottom: 0;
+}
+.nav-item:not(.is-active):hover
+{
+	color: #1aff1a;
+	
+}
+.nav-indicator
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 4px;
+	transition: 0.4s;
+	height: 5px;
+	z-index: 1;
+	border-radius: 8px 8px 0 0;
+	
+}
+
+
+
+.pack_text
+{
+	text-align: center;
+	color:   #ff1ac6;
+	font-size: 100px;
+	margin-top: 200px;
+	font-family:'Fjalla One', sans-serif;
+	text-shadow: 0 0 10px  #000000, 0 0 10px  #000000,0 0 10px  #000000;
+	letter-spacing: 10px;
+}
+.pack1
+{
+	
+		
+		height: 50vh;
+		margin-top: 20px ;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		border: 4px solid  #aaff00;
+		text-align: left;
+		border-radius: 20px;
+		background-color: #000000	;
+		
+}
+.ff
+{
+	position: relative;
+	margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+	
+}
+.pack1_image
+{
+	float: left;
+	padding-left: 40px;
+	padding-top: 30px;
+	
+}
+.detail
+{
+float: left;
+padding-left: 70px;
+padding-top: 50px;
+}
+.price
+{
+float: right;
+margin-right: 100px;
+margin-top: 70px;	
+background-color: white;
+color: green;
+border: solid 2px #aaff00;
+border-radius: 10px;
+
+	
+}
+.add_to_cart
+{
+color: white;	
+margin-top: 200px;
+margin-left: 400px;
+}
+.image
+{
+height: 250px;
+width: 250px;	
+border: solid 4px white;
+border-radius: 20px;
+
+	
+}
+.p_name
+{
+	font-size: 40px;
+	font-family:'Rubik', sans-serif;
+	color:  #aaff00;
+	letter-spacing: 2px;
+}
+
+.p_details
+{
+	font-size: 20px;
+	font-family:'Rubik', sans-serif;
+	color: #ffffff;
+	letter-spacing: 2px;
+	line-height: 1.7;
+	word-spacing: 3px;
+	font-weight: bolder;
+	
+}
+.form-control
+{
+	border: none;
+	outline: none;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+	margin: 0 5px !important;
+	font-size: 20px;
+	height: 20px;
+	width: 40px;
+}
+.form-control:hover,
+.form-control:focus
+{
+	background: #ff008b;
+	color: #fff;
+}
+
+button
+{
+	background: black;
+	color: #fff;
+	border: solid 2px #aaff00;
+	outline: none;
+	padding: 0 10px;
+	border-radius: 5px;
+	font-size: 20px;
+}
+button:hover
+{
+	background: #ff008b;
+	
+}
+.prize
+{
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	color: red;
+	font-family:'Rubik', sans-serif;
+	font-weight: bold;
+	
+}
+.bag
+{
+	margin-left: 80px;
+	margin-bottom: 40px;
+	height: 40px;
+	width: 40%;
+	position: relative;
+	display: block;
+	outline: none;
+	text-transform: uppercase;
+	border: solid 2px black;
+	color: #ff008b;
+	font-family:'Rubik', sans-serif;
+	font-weight: bold;
+	background-color: #000000;
+	font-size: 15px;
+}
+.ba
+{
+	margin-left: 80px;
+	margin-bottom: 40px;
+	height: 40px;
+	width: 40%;
+	position: relative;
+	display: block;
+	outline: none;
+	text-transform: uppercase;
+	border: solid 2px black;
+	color: #ff008b;
+	font-family:'Rubik', sans-serif;
+	font-weight: bold;
+	background-color: #000000;
+	text-align: center;
+	border: none;
+	padding: 10px;
+	font-size: 15px;
+	text-decoration:none;
+}
+::-webkit-scrollbar
+{
+
+width: 12px;
+}
+::-webkit-scrollbar-thumb
+{
+background: linear-gradient(transparent,#30ff00);
+}
+::-webkit-scrollbar-thumb:hover
+{
+background: linear-gradient(transparent,#00c6ff);	
+}
